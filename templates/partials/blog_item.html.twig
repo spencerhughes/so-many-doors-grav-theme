@@ -21,17 +21,18 @@
             </time>
         </span>
 	</h4>
+      {% if page.taxonomy.tag %}
+      <span class="tags">
+          <em>Tags: </em>
+          {% for tag in page.taxonomy.tag %}
+          <a href="{{ blog.url|rtrim('/') }}/tag{{ config.system.param_sep }}{{ tag }}" class="p-category">{{ tag }}</a>
+          {% endfor %}
+      </span>
+    {% endif %}
+
     </div>
 
     <div class="list-blog-padding">
-    {% if page.taxonomy.tag %}
-    <span class="tags">
-        <em>Tags: </em>
-        {% for tag in page.taxonomy.tag %}
-        <a href="{{ blog.url|rtrim('/') }}/tag{{ config.system.param_sep }}{{ tag }}" class="p-category">{{ tag }}</a>
-        {% endfor %}
-    </span>
-    {% endif %}
     {% if header_image %}
         {% if header_image_file %}
             {% set header_image_media = page.media.images[header_image_file] %}

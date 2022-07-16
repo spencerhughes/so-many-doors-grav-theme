@@ -189,3 +189,6 @@ html {
     /* Set your content font stack here: */
     font-family: "Courier New";
 }
+h4.p-name {
+    margin-bottom: 0px;
+}
