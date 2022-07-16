@@ -1,0 +1,32 @@
+name: So Many Doors
+slug: so-many-doors
+type: theme
+version: 0.1.0
+description: So Many Doors
+icon: rebel
+author:
+  name: Spencer Hughes
+  email: spencer@somanydoors.ca
+homepage: https://github.com/spencer-hughes/grav-theme-so-many-doors
+demo: http://demo.yoursite.com
+keywords: grav, theme, etc
+bugs: https://github.com/spencer-hughes/grav-theme-so-many-doors/issues
+readme: https://github.com/spencer-hughes/grav-theme-so-many-doors/blob/develop/README.md
+license: MIT
+
+dependencies:
+  - { name: grav, version: '>=1.6.0' }
+
+form:
+  validation: loose
+  fields:
+    dropdown.enabled:
+        type: toggle
+        label: Dropdown in Menu
+        highlight: 1
+        default: 1
+        options:
+          1: PLUGIN_ADMIN.ENABLED
+          0: PLUGIN_ADMIN.DISABLED
+        validate:
+          type: bool
