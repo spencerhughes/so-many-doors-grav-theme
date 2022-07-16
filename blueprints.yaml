@@ -3,15 +3,13 @@ slug: so-many-doors
 type: theme
 version: 0.1.0
 description: So Many Doors
-icon: rebel
+icon: person-to-door
 author:
   name: Spencer Hughes
   email: spencer@somanydoors.ca
-homepage: https://github.com/spencer-hughes/grav-theme-so-many-doors
-demo: http://demo.yoursite.com
-keywords: grav, theme, etc
-bugs: https://github.com/spencer-hughes/grav-theme-so-many-doors/issues
-readme: https://github.com/spencer-hughes/grav-theme-so-many-doors/blob/develop/README.md
+homepage: https://github.com/spencer-hughes/so-many-doors-grav-theme
+bugs: https://github.com/spencer-hughes/so-many-doors-grav-theme/issues
+readme: https://github.com/spencer-hughes/so-many-doors-grav-theme/blob/develop/README.md
 license: MIT
 
 dependencies:
