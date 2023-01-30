@@ -9,6 +9,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     {% include 'partials/metadata.html.twig' %}
 
+    {% if ( site.author.mastodon_username and site.author.mastodon_instance ) %}<link rel="me" href="https://{{ site.author.mastodon_instance|e }}/@{{ site.author.mastodon_username|e }}" />{% endif %}
+    {% if site.author.github %}<link rel="me" href="https://github.com/{{ site.author.github|e }}" />{% endif %}
     <link rel="icon" type="image/png" href="{{ url('theme://images/logo.png')|e }}" />
     <link rel="canonical" href="{{ page.canonical(true)|e }}" />
 {% endblock head %}
